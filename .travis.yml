@@ -12,5 +12,6 @@ before_deploy:
 deploy:
   provider: script
   script: bash bin/deploy-netlify.sh
+  skip_cleanup: true
   on:
     branch: production
