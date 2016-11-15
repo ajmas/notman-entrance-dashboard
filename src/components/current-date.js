@@ -3,7 +3,7 @@ import Moment from 'moment';
 
 export default class CurrentDateComponent extends React.Component {
 
-    setTime() {
+	    setTime() {
         var lang = 'en';
         this.setState({
             time: Moment(new Date())
@@ -26,7 +26,7 @@ export default class CurrentDateComponent extends React.Component {
     }
 
     render() {
-        return <span id="datenow">{this.state.time}</span>;
+        return <span id="datenow">{this.state.time} XX1</span>;
     }
 
 }
