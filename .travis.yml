@@ -14,9 +14,10 @@ before_deploy:
   - ls -l bin
   - ls -l
   - echo $NETLIFY_SITE
+  - bash bin/test.sh
 
 deploy:
   provider: script
-  script: bin/deploy-netlify.sh
+  script: bash bin/deploy-netlify.sh
   on:
     branch: production
