@@ -7,6 +7,10 @@ before_script:
 
 before_deploy:
   - chmod +x bin/deploy-netlify.sh
+  - ls -l bin
+  - ls -l
+  - echo $NETLIFY_SITE
+  
 
 deploy:
   provider: script
